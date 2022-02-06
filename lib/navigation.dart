@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:website/privacy.dart';
 import 'package:website/splash/splash_page.dart';
@@ -11,7 +12,6 @@ class Navigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double drawerDividerHeight = 1;
-    double drawerFontSize = 15;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -23,35 +23,24 @@ class Navigation extends StatelessWidget {
       endDrawer: Drawer(
         child: Column(
           children: [
-            ListTile(
-              tileColor: Theme.of(context).primaryColor,
-              title: Text("Home", style: TextStyle(fontSize: drawerFontSize)),
+            MenuItem(
+              text: "Home",
               onTap: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, "/");
                     //MaterialPageRoute(builder: (context) => SplashPage()));
               },
             ),
-            Divider(
-              height: drawerDividerHeight,
-              color: Colors.white,
-            ),
-            ListTile(
-              tileColor: Theme.of(context).primaryColor,
-              title: Text("Support", style: TextStyle(fontSize: drawerFontSize)),
+            MenuItem(
+              text: "Support",
               onTap: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, "/support");
                     //MaterialPageRoute(builder: (context) => Support()));
               },
             ),
-            Divider(
-              height: drawerDividerHeight,
-              color: Colors.white,
-            ),
-            ListTile(
-              tileColor: Theme.of(context).primaryColor,
-              title: Text("Privacy policy", style: TextStyle(fontSize: drawerFontSize)),
+            MenuItem(
+              text: "Privacy policy",
               onTap: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, "/privacy");
@@ -65,3 +54,20 @@ class Navigation extends StatelessWidget {
     );
   }
 }
+
+class MenuItem extends StatelessWidget {
+  final String text;
+  final VoidCallback onTap;
+  const MenuItem({Key? key, required this.text, required this.onTap}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    const double drawerFontSize = 15;
+
+    return ListTile(
+      title: Text(text, style: TextStyle(fontSize: drawerFontSize)),
+      onTap: onTap,
+    );
+  }
+}
+
