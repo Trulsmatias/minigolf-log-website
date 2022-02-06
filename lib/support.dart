@@ -69,7 +69,7 @@ class _SupportState extends State<Support> {
                           text: "Send an email to: ",
                         ),
                         TextSpan(
-                          text: "support@minigolflog.golf",
+                          text: "support@minigolflog.com",
                           style: TextStyle(
                             decoration: TextDecoration.underline,
                           ),
