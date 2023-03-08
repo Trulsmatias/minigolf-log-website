@@ -1,6 +1,6 @@
 # Website for Minigolf Log
 
-URL: [minigolflog.golf](https://minigolflog.golf)
+URL: [minigolflog.com](https://minigolflog.com)
 
 Minigolf Log is a minigolf scorecard app for both [Android](https://play.google.com/store/apps/details?id=com.tmt.minigolf) and [iOS](https://apps.apple.com/no/app/minigolf-log/id1551099255).
 
