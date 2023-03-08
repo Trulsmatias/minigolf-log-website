@@ -19,6 +19,7 @@ class Navigation extends StatelessWidget {
         backgroundColor: Colors.transparent,
         //Theme.of(context).scaffoldBackgroundColor,
         iconTheme: IconThemeData(color: Colors.black),
+        automaticallyImplyLeading: false,
       ),
       endDrawer: Drawer(
         child: Column(

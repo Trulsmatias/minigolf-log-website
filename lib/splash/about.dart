@@ -29,7 +29,8 @@ class About extends StatelessWidget {
               "- The score is calculated instantly while you play (optional)\n"
               "- Customize holes' names, add an extra hole or delete it to fit your course\n"
               "- The games are saved to look back on later\n"
-              "- Share the game with others",
+              "- Share the game with others\n"
+              "- Statistics! Who has the most hole in ones? Or who is the most consistent?",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 25,
