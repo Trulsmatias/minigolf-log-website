@@ -18,7 +18,6 @@ final Uri _googlePlayLaunchUri = Uri(
 class Stores extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double widthRatio = MediaQuery.of(context).size.width * 4 / 9;
     return Padding(
       padding: const EdgeInsets.all(20.0),
       child: Center(
@@ -40,7 +39,7 @@ class Stores extends StatelessWidget {
                   color: Colors.white,
                   icon: Icon(SimpleIcons.apple),
                   onPressed: () {
-                    launch(_appStoreLaunchUri.toString());
+                    launchUrl(_appStoreLaunchUri);
                   },
                 ),
               ),
@@ -58,7 +57,7 @@ class Stores extends StatelessWidget {
                 color: Colors.white,
                 icon: Icon(SimpleIcons.googleplay),
                 onPressed: () {
-                  launch(_googlePlayLaunchUri.toString());
+                  launchUrl(_googlePlayLaunchUri);
                 },
               ),
             ),

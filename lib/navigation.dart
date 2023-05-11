@@ -1,8 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:website/privacy.dart';
-import 'package:website/splash/splash_page.dart';
-import 'package:website/support.dart';
 
 class Navigation extends StatelessWidget {
   final child;
@@ -11,7 +7,6 @@ class Navigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double drawerDividerHeight = 1;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(

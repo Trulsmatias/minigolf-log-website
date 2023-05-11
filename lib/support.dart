@@ -21,7 +21,7 @@ class _SupportState extends State<Support> {
   void initState() {
     super.initState();
     tapGestureRecognizer = TapGestureRecognizer()
-      ..onTap = () => launch(_emailLaunchUri.toString()); // fancy
+      ..onTap = () => launchUrl(_emailLaunchUri); // fancy
   }
 
   @override
