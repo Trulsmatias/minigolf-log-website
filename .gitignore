@@ -1,16 +1,16 @@
 # assets and fonts
-web/icons/*
-web/images/*
-web/images/screenshots/*
-web/favicon.ico
-fonts/*
-pubspec.lock
+#web/icons/*
+#web/images/*
+#web/images/screenshots/*
+#web/favicon.ico
+#fonts/*
+
 
 # exceptions to assets and fonts rules
-!web/icons/.gitkeep
-!web/images/.gitkeep
-!web/images/screenshots/.gitkeep
-!fonts/.gitkeep 
+#!web/icons/.gitkeep
+#!web/images/.gitkeep
+#!web/images/screenshots/.gitkeep
+#!fonts/.gitkeep
 
 # Miscellaneous
 *.class
