@@ -5,7 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 final Uri _emailLaunchUri = Uri(
   scheme: 'mailto',
-  path: 'support@minigolflog.golf',
+  path: 'trulsmatias@gmail.com',
   queryParameters: {'subject': 'Help'},
 );
 
