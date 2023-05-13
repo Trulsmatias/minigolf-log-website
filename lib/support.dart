@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:website/navigation.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+const email = "trulsmatias@gmail.com";
+
 final Uri _emailLaunchUri = Uri(
   scheme: 'mailto',
-  path: 'trulsmatias@gmail.com',
+  path: email,
   queryParameters: {'subject': 'Help'},
 );
 
@@ -69,7 +71,7 @@ class _SupportState extends State<Support> {
                           text: "Send an email to: ",
                         ),
                         TextSpan(
-                          text: "support@minigolflog.com",
+                          text: email,
                           style: TextStyle(
                             decoration: TextDecoration.underline,
                           ),
