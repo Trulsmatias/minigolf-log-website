@@ -36,54 +36,56 @@ class _SupportState extends State<Support> {
   Widget build(BuildContext context) {
     return Navigation(
       child: Center(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Expanded(
-              child: Container(
-                color: Theme.of(context).primaryColor,
-                child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Do you need support?",
-                      style: TextStyle(
-                        fontSize: 50,
+        child: SelectionArea(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                child: Container(
+                  color: Theme.of(context).primaryColor,
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Do you need support?",
+                        style: TextStyle(
+                          fontSize: 50,
+                        ),
                       ),
                     ),
                   ),
                 ),
               ),
-            ),
-            Expanded(
-              flex: 2,
-              child: Align(
-                alignment: Alignment.topCenter,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: RichText(
-                    text: TextSpan(
-                      style: TextStyle(fontSize: 20, color: Colors.black),
-                      children: [
-                        TextSpan(
-                          text: "Send an email to: ",
-                        ),
-                        TextSpan(
-                          text: email,
-                          style: TextStyle(
-                            decoration: TextDecoration.underline,
+              Expanded(
+                flex: 2,
+                child: Align(
+                  alignment: Alignment.topCenter,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: RichText(
+                      text: TextSpan(
+                        style: TextStyle(fontSize: 20, color: Colors.black),
+                        children: [
+                          TextSpan(
+                            text: "Send an email to: ",
                           ),
-                          recognizer: tapGestureRecognizer,
-                        )
-                      ],
+                          TextSpan(
+                            text: email,
+                            style: TextStyle(
+                              decoration: TextDecoration.underline,
+                            ),
+                            recognizer: tapGestureRecognizer,
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
