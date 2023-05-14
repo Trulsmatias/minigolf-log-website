@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_icons/simple_icons.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 final Uri _appStoreLaunchUri = Uri(
@@ -37,7 +37,7 @@ class Stores extends StatelessWidget {
                 child: IconButton(
                   iconSize: 35, //- (widthRatio / 1000000), // 40
                   color: Colors.white,
-                  icon: Icon(SimpleIcons.apple),
+                  icon: FaIcon(FontAwesomeIcons.apple),
                   onPressed: () {
                     launchUrl(_appStoreLaunchUri);
                   },
@@ -55,7 +55,7 @@ class Stores extends StatelessWidget {
               child: IconButton(
                 iconSize: 35, //- (widthRatio / 1000000), // 40
                 color: Colors.white,
-                icon: Icon(SimpleIcons.googleplay),
+                icon: FaIcon(FontAwesomeIcons.googlePlay),
                 onPressed: () {
                   launchUrl(_googlePlayLaunchUri);
                 },
