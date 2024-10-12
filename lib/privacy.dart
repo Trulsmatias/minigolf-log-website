@@ -6,6 +6,7 @@ class PrivacyPolicy extends StatelessWidget {
   Widget build(BuildContext context) {
     const bodyTextStyle = TextStyle(
       fontSize: 18,
+      fontFamily: "Roboto"
     );
     return Navigation(
       child: SafeArea(
