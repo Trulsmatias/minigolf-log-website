@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color.fromARGB(255, 52, 199, 89, ),
         fontFamily: "Kankin",
+        scaffoldBackgroundColor: Colors.white,
         //primarySwatch: Colors.green,
       ),
       debugShowCheckedModeBanner: false,

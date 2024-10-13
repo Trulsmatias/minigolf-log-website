@@ -17,6 +17,7 @@ class Navigation extends StatelessWidget {
         automaticallyImplyLeading: false,
       ),
       endDrawer: Drawer(
+        backgroundColor: Colors.white,
         child: Column(
           children: [
             MenuItem(

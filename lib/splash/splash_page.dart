@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:website/constants.dart';
+import 'package:website/margins.dart';
 import 'package:website/navigation.dart';
 import 'package:website/splash/about.dart';
 import 'package:website/splash/logo_image.dart';
