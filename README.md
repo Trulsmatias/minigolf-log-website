@@ -7,4 +7,6 @@ Minigolf Log is a minigolf scorecard app for both [Android](https://play.google.
 
 Both the website (this project) and the app (not in this project) is written in Flutter.
 
+## Deployment
 
+Deployment is done automatically through Netlify when updating the master branch.
