@@ -33,7 +33,7 @@ class PrivacyPolicy extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 25.0),
                   child: Text(
-                    "\n* Country, e.g. “Norway"
+                    "\n* Country, e.g. \"Norway\""
                     "\n* What version of the app the user is using"
                     "\n* How much money they have paid in the app"
                     "\n* When the app was most recently opened"
