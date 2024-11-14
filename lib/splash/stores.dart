@@ -18,6 +18,8 @@ final Uri _googlePlayLaunchUri = Uri(
 class Stores extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    const iconSize = 35.0;
+    const iconButtonSize = 53.0;
     return Padding(
       padding: const EdgeInsets.all(20.0),
       child: Center(
@@ -27,15 +29,15 @@ class Stores extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
               child: Ink(
-                //width: widthRatio / 5,
-                //height: widthRatio / 5,
+                width: iconButtonSize,
+                height: iconButtonSize,
                 decoration: const ShapeDecoration(
                   color: Colors.black,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                 ),
                 child: IconButton(
-                  iconSize: 35, //- (widthRatio / 1000000), // 40
+                  iconSize: iconSize,
                   color: Colors.white,
                   icon: FaIcon(FontAwesomeIcons.apple),
                   onPressed: () {
@@ -45,15 +47,15 @@ class Stores extends StatelessWidget {
               ),
             ),
             Ink(
-              //width: widthRatio / 5,
-              //height: widthRatio / 5,
+              width: iconButtonSize,
+              height: iconButtonSize,
               decoration: const ShapeDecoration(
                 color: Colors.black,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10))),
               ),
               child: IconButton(
-                iconSize: 35, //- (widthRatio / 1000000), // 40
+                iconSize: iconSize,
                 color: Colors.white,
                 icon: FaIcon(FontAwesomeIcons.googlePlay),
                 onPressed: () {
