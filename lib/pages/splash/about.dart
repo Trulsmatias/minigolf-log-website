@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:website/margins.dart';
+import 'package:website/pages/margins.dart';
 
 class About extends StatelessWidget {
   @override

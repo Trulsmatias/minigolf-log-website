@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:website/margins.dart';
-import 'package:website/navigation.dart';
-import 'package:website/splash/about.dart';
-import 'package:website/splash/logo_image.dart';
-import 'package:website/splash/logo_text.dart';
-import 'package:website/splash/screenshots.dart';
-import 'package:website/splash/stores.dart';
+
+import '../../navigation.dart';
+import '../margins.dart';
+import 'about.dart';
+import 'logo_image.dart';
+import 'logo_text.dart';
+import 'screenshots.dart';
+import 'stores.dart';
+
+
 
 class SplashPage extends StatelessWidget {
   @override

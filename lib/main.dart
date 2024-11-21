@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:website/privacy.dart';
-import 'package:website/splash/splash_page.dart';
-import 'package:website/support.dart';
+
+import 'pages/privacy.dart';
+import 'pages/splash/splash_page.dart';
+import 'pages/support.dart';
+
 
 void main() {
   runApp(MyApp());
