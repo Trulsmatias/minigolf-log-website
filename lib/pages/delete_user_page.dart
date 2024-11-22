@@ -27,11 +27,11 @@ class DeleteUserPage extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "To handle sales, we have integrated service from a third-party provider in the app. This third-party provider sets up an anonymous payment profile for any paying user."
-                  "If you want to delete all information regarding this user, in the app go to settings, then other settings and press the \"Delete my data\" button. This will create an email containing"
+                  "To handle sales, we have integrated service from a third-party provider in the app. This third-party provider sets up an anonymous payment profile for any paying user. "
+                  "\n\nIf you want to delete all information regarding this user, in the app go to settings, then other settings and press the \"Delete my data\" button. This will create an email containing"
                   " your anonymous user ID where you can ask to get your data deleted. If you have not bought anything an ID will still be shown even though no payment profile has been created. "
-                  "When the email is sent the request will be handled manually and you will get an update as soon as you data has been deleted."
-                  "This action may prevent you from accessing the payed parts of the app and you may have to purchase it again."
+                  "When the email is sent, the request will be handled manually and you will get an update as soon as your data has been deleted. "
+                  "\n\nThis action may prevent you from accessing the payed parts of the app and you may have to purchase it again. "
                   "Oh, well. Welcome back at a later date!",
                   style: bodyTextStyle,
                 ),
