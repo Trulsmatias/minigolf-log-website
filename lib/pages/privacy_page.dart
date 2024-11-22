@@ -3,7 +3,7 @@ import 'package:website/navigation.dart';
 
 import 'margins.dart';
 
-class PrivacyPolicy extends StatelessWidget {
+class PrivacyPolicyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const bodyTextStyle = TextStyle(fontSize: 18, fontFamily: "Roboto");

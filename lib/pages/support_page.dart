@@ -11,12 +11,12 @@ final Uri _emailLaunchUri = Uri(
   queryParameters: {'subject': 'Help'},
 );
 
-class Support extends StatefulWidget {
+class SupportPage extends StatefulWidget {
   @override
-  _SupportState createState() => _SupportState();
+  _SupportPageState createState() => _SupportPageState();
 }
 
-class _SupportState extends State<Support> {
+class _SupportPageState extends State<SupportPage> {
   late TapGestureRecognizer tapGestureRecognizer;
 
   @override

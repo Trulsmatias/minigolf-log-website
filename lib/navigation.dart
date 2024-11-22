@@ -25,7 +25,7 @@ class Navigation extends StatelessWidget {
               onTap: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, "/");
-                    //MaterialPageRoute(builder: (context) => SplashPage()));
+                //MaterialPageRoute(builder: (context) => SplashPage()));
               },
             ),
             MenuItem(
@@ -33,7 +33,7 @@ class Navigation extends StatelessWidget {
               onTap: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, "/support");
-                    //MaterialPageRoute(builder: (context) => Support()));
+                //MaterialPageRoute(builder: (context) => Support()));
               },
             ),
             MenuItem(
@@ -41,7 +41,14 @@ class Navigation extends StatelessWidget {
               onTap: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, "/privacy");
-                    //MaterialPageRoute(builder: (context) => PrivacyPolicy()));
+                //MaterialPageRoute(builder: (context) => PrivacyPolicy()));
+              },
+            ),
+            MenuItem(
+              text: "How to delete user",
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, "/deleteuser");
               },
             ),
           ],
@@ -55,7 +62,9 @@ class Navigation extends StatelessWidget {
 class MenuItem extends StatelessWidget {
   final String text;
   final VoidCallback onTap;
-  const MenuItem({Key? key, required this.text, required this.onTap}) : super(key: key);
+
+  const MenuItem({Key? key, required this.text, required this.onTap})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -67,4 +76,3 @@ class MenuItem extends StatelessWidget {
     );
   }
 }
-

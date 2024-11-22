@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:website/pages/delete_user_page.dart';
 
-import 'pages/privacy.dart';
+import 'pages/privacy_page.dart';
 import 'pages/splash/splash_page.dart';
-import 'pages/support.dart';
+import 'pages/support_page.dart';
 
 
 void main() {
@@ -17,8 +18,9 @@ class MyApp extends StatelessWidget {
       title: 'Minigolf Log',
       routes: {
         "/": (context) => SplashPage(),
-        "/support": (context) => Support(),
-        "/privacy": (context) => PrivacyPolicy(),
+        "/support": (context) => SupportPage(),
+        "/privacy": (context) => PrivacyPolicyPage(),
+        "/deleteuser": (context) => DeleteUserPage(),
       },
       theme: ThemeData(
         primaryColor: Color.fromARGB(255, 52, 199, 89, ),
